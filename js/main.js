@@ -2,16 +2,15 @@ const buttons = document.querySelectorAll(".btn");
 const show_binary = document.getElementById("binary");
 const resultDecimal = document.getElementById("decimal");
 const btn_convert = document.querySelector('.convert');
+const btn_delete= document.querySelector(".delete")
 buttons.forEach((btn)=>{// add click for buttons with class btn
     btn.addEventListener("click",()=>{
-        var valueBinary =  btn.innerHTML;
+        var valueBinary =  btn.innerHTML; 
         show_binary.innerHTML += valueBinary;
         text_binary = show_binary.value;
-
-        btn_convert.onclick = ()=>{
-            const decimalNumber = binaryToDecimal(text_binary);
-            resultDecimal.innerHTML = decimalNumber;
-        }
+        const decimalNumber = binaryToDecimal(text_binary);
+        resultDecimal.innerHTML = decimalNumber;
+    
         function binaryToDecimal(valueBinary) {
             let decimal = 0;
             let base = 1;
@@ -27,6 +26,7 @@ buttons.forEach((btn)=>{// add click for buttons with class btn
           }
           
     })
-    
-})
+   
 
+
+})

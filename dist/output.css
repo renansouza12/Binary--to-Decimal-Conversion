@@ -529,6 +529,18 @@ video {
   top: 38%;
 }
 
+.top-\[40\%\] {
+  top: 40%;
+}
+
+.top-\[45\%\] {
+  top: 45%;
+}
+
+.top-\[46\%\] {
+  top: 46%;
+}
+
 .flex {
   display: flex;
 }
