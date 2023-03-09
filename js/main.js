@@ -1,7 +1,7 @@
 const buttons = document.querySelectorAll(".btn");
 const show_binary = document.getElementById("binary");
 const resultDecimal = document.getElementById("decimal");
-const btn_delete = document.querySelector(".delete")
+const btn_delete = document.querySelector(".delete");
 
 
 buttons.forEach((btn) => {// add click for buttons with class btn
